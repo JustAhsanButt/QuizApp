@@ -1,0 +1,64 @@
+
+
+
+<div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">
+  <mat-card class="box">
+    <mat-card-header>
+      <mat-card-title>Sign Up</mat-card-title>
+    </mat-card-header>
+    <form class="example-form" [formGroup]="signUpForm" (ngSubmit)="OnSubmit(signUpForm.value)">
+      <mat-card-content>
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Username" name="Username" formControlName="Username">
+        </mat-form-field>
+        <span style="color: red" *ngIf="Username && Username.invalid && Username.touched">This Field Is Required!</span>
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Email" name="Email" formControlName="Email">
+        </mat-form-field>
+        <span style="color: red" *ngIf="Email && Email.invalid && Email.touched">This Field Is Required!</span>
+        <mat-form-field class="example-full-width">
+          <input matInput type="password" placeholder="Password" name="Password" formControlName="Password">
+        </mat-form-field>
+        <span style="color: red" *ngIf="Password && Password.invalid && Password.touched">This Field Is Required!</span>
+        <mat-form-field class="example-full-width">
+          <input matInput placeholder="Role" name="Role" formControlName="Role">
+        </mat-form-field>
+        <span style="color: red" *ngIf="Role && Role.invalid && Role.touched">This Field Is Required!</span>
+        
+      </mat-card-content>
+      <button mat-stroked-button color="accent" class="btn-block" [disabled]="!signUpForm.valid">Register</button>
+    </form>
+  </mat-card>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+

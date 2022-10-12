@@ -1,0 +1,91 @@
+
+<div class="container mt-3">
+    <div class="card">
+        <div class="d-flex justify-content-between p3">
+            <div class="image">
+                <img src="https://img.icons8.com/color/96/000000/angularjs.png" width="90" alt="logo">
+            </div>
+            <div class="quiz-header">
+                <h4 style="font-family: cursive">Angular & TypeScript Quiz</h4>
+                <span style="font-style:italic">Welcome {{name}}</span>
+            </div>
+        </div>
+
+        <ng-container *ngIf="!isQuizCompleted">
+            <div class="d-flex justify-content-around py-3">
+                <div class="score">
+                    <h3>{{points}} Total Points</h3>
+                </div>
+                <div class="question-remain">
+                    <span style="font-style:italic">Question {{currentQuestion + 1 }} of {{questionList.length}}</span>
+                </div>
+                <div class="timer">
+                    <h5> {{counter}} sec </h5> 
+                </div>
+            </div>
+            <div class="progress mb-3">
+                <div class="progress-bar progress-bar-striped bg-success" role="pgoressbar" [ngStyle]="{'width':progress+'%'}" aria-valuenow="0" aria-valuemax="100"></div>
+            </div>
+            <div class="question">
+                <div class="card">
+                    <h2>{{questionList[currentQuestion]?.questionText}</h2>
+                     <h2>What Is Your Name?</h2>
+                 </div>
+            </div> 
+            <div class="options">
+            <ol>
+                <!-- <ol *ngFor="let option of questionList[currentQuestion]?.options"></ol> -->
+                <div class="card">
+                    <mat-checkbox><li>option.text  Ahmad</li></mat-checkbox>
+                </div>
+                 <div class="card">
+                    <mat-checkbox><li>option.text asif</li></mat-checkbox>
+                </div>
+                <div class="card">
+                    <mat-checkbox><li>option.text basit</li></mat-checkbox>
+                </div>
+                <div class="card">
+                    <mat-checkbox><li>option.text javaid</li></mat-checkbox>
+                </div> 
+            </ol>
+            </div>
+            <div class="d-flex justify-content-between">
+            <button class="btn" (click)="previousQuestion()" [disabled]="currentQuestion===0"><i class="fa text-primary fa-chevron-left fa-2x" aria-hidden="true"></i></button>
+            <button class="btn" (click)="resetQuiz()"><i class="fa fa-refresh text-primary fa-2x" aria-hidden="true"></i></button>
+            <button class="btn" (click)="nextQuestion()"><i class="fa text-primary fa-chevron-right fa-2x" aria-hidden="true"></i></button>
+            </div>
+        </ng-container>
+
+
+
+
+        <ng-container *ngIf="isQuizCompleted">
+<div class="row d-flex justify-content-between">
+
+        <img style="width: 50px;" class="img-fluid col-sm-12 max-auto"
+         src="https://icon-library.com/images/celebration-icon-png/celebration-icon-png-7.jpg" alt="">
+
+    <div class="result text-center col-md-6 col-sm-12">
+        <h3><b>Congratulations !! </b><br><b>You Have Completed The Quiz.</b><br> <b>Below is your result:</b></h3>
+        <p>Total Questions Attemped: {{questionList.length}}</p>
+        <p>Total Correct Answers: {{correctAnswer}} </p>
+        <p>Total Wrong Answers: {{inCorrectAnswer}}</p>
+        <p>Your Score: {{points}} Points</p>
+    </div>
+</div>
+        </ng-container>
+
+
+
+
+
+
+
+
+    </div>
+</div>       
+
+       
+            
+            
+        

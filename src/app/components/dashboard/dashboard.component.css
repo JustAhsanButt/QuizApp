@@ -1,0 +1,54 @@
+.example-card {
+    max-width: 400px;
+    margin-bottom: 8px;
+  }
+  
+
+
+
+
+
+  .grid-container{
+    margin: 20px;
+  }
+  .dashboard-card{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+  }
+  .more-button{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+  }
+  .dashboard-card-content{
+    text-align: center;
+  }
+
+
+  .h1title{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    padding: 1rem;
+
+  }
+
+
+  .mat-card{
+    text-align: center;
+    height: 80%;
+    width: 80%;
+    padding: 1rem;
+    margin-right: 2rem;
+  }
+
+  .mat-card-2{
+    text-align: center;
+    height: 60%;
+    width: 40%;
+    padding: 1rem;
+    margin-right: 2rem;
+  }
