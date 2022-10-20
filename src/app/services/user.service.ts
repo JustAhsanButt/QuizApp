@@ -9,7 +9,8 @@ import { UserModel } from '../models/user-model';
 export class UserService {
   constructor(private http: HttpClient) {}
 
-  private endpoint: string = 'https://retoolapi.dev/jXczqw/users';
+  // private endpoint: string = 'https://retoolapi.dev/jXczqw/users';
+  private endpoint: string = 'https://retoolapi.dev/sqCqEM/data';
 
   // Service For  Get All Users list From Database
   getAllUser(): Observable<UserModel[]> {

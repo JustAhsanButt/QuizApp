@@ -1,9 +1,12 @@
 table {
     width: 100%;
   }
-.container{
+.container-fluid{
 padding: 15px;
 margin-left: 10px;
 margin-right: 5px;
-  }
+}
+mat-form-field{
+  margin-right: 2px;
+}
  

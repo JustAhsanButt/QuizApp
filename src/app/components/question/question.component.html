@@ -1,198 +1,77 @@
-<!-- 
-<div class="container">
-    <div class="row">
-        <div class="col">
-            <mat-card class="mat-card">
-                <h1 class="h1">Questions and Answers</h1>
-                <mat-card-content>
-                <form>
-                    <div class="col">
-                        <mat-form-field>
-                            <input matInput type="text" placeholder="Enter Question">
-                        </mat-form-field> 
-                    </div>
-                    <div class="col">
-                        <mat-form-field>
-                            <mat-label>
-                                Answer:
-                            </mat-label>
-                            <input matInput>
-                        </mat-form-field>
-                    </div>
-                    <div class="col">
-                        <mat-form-field>
-                            <mat-label>
-                                Answer:
-                            </mat-label>
-                            <input matInput>
-                        </mat-form-field>
-                    </div>
-                    <div class="col">
-                        <mat-form-field>
-                            <mat-label>
-                                Answer:
-                            </mat-label>
-                            <input matInput>
-                        </mat-form-field>
-                    </div>
-                    <div class="col">
-                        <mat-form-field>
-                            <mat-label>
-                                Answer:
-                            </mat-label>
-                            <input matInput>
-                        </mat-form-field>
-                    </div>
-                    <div class="col">
-                        <mat-form-field>
-                            <mat-label>
-                                Answer:
-                            </mat-label>
-                            <input matInput>
-                        </mat-form-field>
-                    </div>
-                    <div>
-                        <button mat-raised-button color="accent"> + Add</button>
-                        <button mat-raised-button color="accent"> - Delete</button>
-                    </div>
-                    
-                </form>
-            </mat-card-content>
-            </mat-card>
-        </div>
-    </div>
-</div>
- -->
-
-
- 
- <form>
-    <mat-card>
+<div>
+    <mat-card class="mat-card-window">
         <mat-card-header>
             <mat-card-title>
                 Questions and Answers
             </mat-card-title>
         </mat-card-header>
+        
         <mat-card-content>
-            <div>
+            <form>
+            <div class="input-row">
             <mat-form-field class="col">
                 <mat-label>Question</mat-label>
                 <input matInput type="text" placeholder="Enter Your Question Here...">
             </mat-form-field>
         </div>
-    <div>
+    <div  class="input-row">
         <mat-form-field class="col">
-            <mat-label></mat-label>
+            <mat-label>Answer</mat-label>
             <!-- <mat-checkbox></mat-checkbox> -->
             <input matInput placeholder="Enter Your Answer Here...">
         </mat-form-field>
     </div>
-            <mat-form-field class="col">
-                <mat-label></mat-label>
-                <!-- <mat-checkbox></mat-checkbox> -->
-                <input matInput placeholder="Enter Your Answer Here...">
-            </mat-form-field>
-
-            <mat-form-field class="col">
-                <mat-label></mat-label>
-                <!-- <mat-checkbox></mat-checkbox> -->
-                <input matInput placeholder="Enter Your Answer Here...">
-            </mat-form-field>
-            
-            <mat-form-field class="col">
-                <mat-label></mat-label>
-                <!-- <mat-checkbox></mat-checkbox> -->
-                <input matInput placeholder="Enter Your Answer Here...">
-            </mat-form-field>
-            
-            <div class="container">
+            <div class="newrow">
                 <div *ngFor="let ans of questionsArray.controls; last as isLast; index as idx" class="input-row">
                          <mat-form-field class="col">
+                            <!-- <mat-label>Answer</mat-label> -->
                             <!-- <mat-checkbox></mat-checkbox> -->
                             <input matInput [formControl]="ans"> 
                         </mat-form-field> 
                 </div>
             </div>
-        </mat-card-content>
-        <mat-card-actions class="btn">
-            <button mat-raised-button color="accent" (click)="removeRow()" *ngIf="questionsArray.length > 1">
-            <mat-icon>remove_circle</mat-icon> Row
-            </button>
-            <button mat-raised-button color="primary"  (click)="addRow()">
-            <mat-icon>add_circle</mat-icon> Row
-            </button>
-        </mat-card-actions>
-    </mat-card>
- </form>  
-
-
-
-
-
-
-
-
- <!-- ====================================================== -->
-
-<!-- 
- <mat-card>
-    <mat-card-header>
-        <mat-card-title>
-                <h1>Reactive Form for FormArray</h1>
-        </mat-card-title>
-    </mat-card-header>
-    <mat-card-content>
-        <form [formGroup]="reactform" (ngSubmit)="proceedSave()">
-
-            <mat-form-field appearance="fill">
-                <mat-label>Code</mat-label>
-                <input matInput type="text" formControlName="code">
-            </mat-form-field>
-
-            <mat-form-field appearance="fill">
-                <mat-label>Name</mat-label>
-                <input matInput type="text" formControlName="name">
-            </mat-form-field>
-<div formArrayName="deliveryAddress">
-    <div *ngFor="let item of deliveryAddress.controls; let i=index">
-<div [formGroupName]="i">
-    <h3>Address of {{i}}</h3>
-<button mat-raised-button color="accent" (click)="RemoveItem(i)">Remove</button>
-
-    <mat-form-field appearance="fill">
-        <mat-label>Street</mat-label>
-        <input matInput type="text" formControlName="street">
-    </mat-form-field>
-
-    <mat-form-field appearance="fill">
-        <mat-label>City</mat-label>
-        <input matInput type="text" formControlName="city">
-    </mat-form-field>
-
-    <mat-form-field appearance="fill">
-        <mat-label>State</mat-label>
-        <input matInput type="text" formControlName="state">
-    </mat-form-field>
-
-    <mat-form-field appearance="fill">
-        <mat-label>Zip</mat-label>
-        <input matInput type="text" formControlName="zip">
-    </mat-form-field> -->
-
-
-<!-- 
-</div>
-</div>
-</div>
-     <div>
-        <button mat-raised-button color="primary" (click)="AddNewRow()">Add New +</button>
-            </div>
-                <div class="example-button-row" style="margin-top:5px">
-                <button mat-raised-button color="primary">Submit</button>
-                <button mat-raised-button color="accent">Clear  </button>
-            </div>
         </form>
-    </mat-card-content>
-</mat-card>  -->
+        </mat-card-content>
+
+        <!-- <mat-card-actions class="btn"> -->
+            <ng-container>
+                
+                <button mat-raised-button color="accent" (click)="removeRow()" 
+                *ngIf="questionsArray.length > 1" matTooltip="Remove Row" 
+                matTooltipPosition="above" >
+                    <mat-icon>remove_circle</mat-icon>
+                    </button>
+        
+                    <button class="bntadd" mat-raised-button color="primary"  (click)="addRow()"
+                     matTooltip="Add Row" matTooltipPosition="after">
+                    <mat-icon>add_circle</mat-icon>
+                    </button>
+            </ng-container>
+           
+
+            <!-- <button mat-raised-button color="accent" class="btnsave">
+                <mat-icon>save_alt</mat-icon>
+                Save
+            </button>
+            <button mat-raised-button color="accent" class="btncancel">
+                <mat-icon>cancel</mat-icon>
+                Cancel
+            </button> -->
+        <!-- </mat-card-actions> -->
+        <ng-container>
+            <button mat-raised-button color="accent" class="btnsave">
+                <mat-icon>save_alt</mat-icon>
+                Save
+            </button>
+            <button mat-raised-button color="accent" class="btncancel">
+                <mat-icon>cancel</mat-icon>
+                Cancel
+            </button>
+        </ng-container>
+    
+    </mat-card>
+   
+   
+</div>
 
 

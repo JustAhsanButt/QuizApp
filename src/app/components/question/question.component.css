@@ -1,82 +1,51 @@
-/* .container{
-    padding: 25px;
-    margin-left: 20px;
-}
-.row{
-    width: 100%;
 
-}
-.mat-card{
-    padding-top: 35px;
-    padding: 30px;
-    margin-left: 15px;
-    width: 70%;
-    height: 80%;
-    display:inline-flexbox;
+mat-card{
+    width: 60vmax;
+    height: 30vmax;
 }
 
-.h1{
-    text-align: center;
-    color: brown;
-    font-family: Arial, Helvetica, sans-serif;
-    
-}
-.col{
-    position: relative;
-    display: flex;
-    text-align: center;
-    padding-left: 50px;
-    padding-top: 5px;
-    width: 100%;
-
-}
-.button{
-    margin-right: 5rem;
-    size: 20px;
-} */
-
-
-
-
-
-
-/* ==================================================== */
-
-mat-card-title{
-    display: flex;
-    position: relative;
-    text-align: center;
+ mat-card-title{
     justify-content: center;
-    justify-items: center;
-}
-.col{
+    padding-bottom: 2rem;   
+} 
+/* .col{
 width: 70%;
 padding-left: 25px;
-}
-.btn{
-    margin-left: 15px;
+} */
+/* .btn{
+    margin-left: 10px;
 }
 .input-row{
     display: flex;
     align-items: center;
-}
-
-
-
-
-
-
-/* =============================================================================== */
-.mat-card{
-
-    padding: left 70px;
-    margin-left: 35px;
-    width: 80%;
-    
-    
-}
+} */
 .mat-form-field{
-    width: 70%;
+    width: 100%;
+    /* margin-left: 2rem;
+    margin-left: 1rem; */
 }
+/* input{
+    width: 100%;
+    margin-left: 2.5rem;
+} */
+/* .input-row{
+    width: 100%;
+    margin-right: 2rem;  
+} */
+.btnadd{
+    
+    
+    padding: 0 auto;
+}
+.btnsave{
+    background: green;
+    margin-left: 500px;
+    margin-right: 10px;
 
+
+}
+.btncancel{
+    background-color: red;
+    
+}
 

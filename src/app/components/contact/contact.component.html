@@ -1,108 +1,113 @@
-
-<h1 class="pageheading1">Please Feel Free To Write Us</h1>
-<hr class="horizontalline">
-<mat-grid-list cols="2" rowHeight="750px">
-    <mat-grid-tile>
-        <mat-card>
-
-            <form class="contactusForm">
-                <div class="heading1">
-                    <h1>Write To Us</h1>
-                </div>
-                <div class="formfield">
-                <mat-form-field>
-                    <input matInput type="text" placeholder="Your Name">
-                </mat-form-field>
-            </div>
-            <div class="formfield">    
-            <mat-form-field>
-                    <input matInput type="text" placeholder="Your Email">
-                </mat-form-field>
-            </div> 
-            <div class="formfield">
-                <mat-form-field>
-                    <input matInput type="text" placeholder="Your Subject">
-                </mat-form-field>
-            </div>
-            <div class="formfield">
-                <mat-form-field>
-                    <textarea matInput type="text" placeholder="Your Message"></textarea>
-                </mat-form-field>
-            </div>
-            </form>
-        </mat-card>
-    </mat-grid-tile>
-
-
-    <mat-grid-tile>
-        <mat-card>
-            <form class="contactusForm">
-                <div class="heading1">
-                    <h1>Write To Us</h1>
-                </div>
-                <div class="formfield">
-                <mat-form-field>
-                    <input matInput type="text" placeholder="Your Name">
-                </mat-form-field>
-            </div>
-            <div class="formfield">    
-            <mat-form-field>
-                    <input matInput type="text" placeholder="Your Email">
-                </mat-form-field>
-            </div> 
-            <div class="formfield">
-                <mat-form-field>
-                    <input matInput type="text" placeholder="Your Subject">
-                </mat-form-field>
-            </div>
-            <div class="formfield">
-                <mat-form-field>
-                    <textarea matInput type="text" placeholder="Your Message"></textarea>
-                </mat-form-field>
-            </div>
-            </form>
-        </mat-card>
-        
-    </mat-grid-tile>
-</mat-grid-list>
-
-
-
-
-
-
-
-
-
-
 <!-- 
+<h1 class="pageheading1">Please Feel Free To Write Us</h1>
+<mat-grid-list cols="1" rowHeight="250">
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>
+            <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid facere vero, tempore et veritatis <br> 
+                numquam. Perferendis magnam magni placeat rerum, quis, laboriosam ipsum pariatur a similique<br> 
+                exercitationem iure possimus enim.
+            </p> -->
+        <!-- </mat-card-title>
+    </mat-card-header>
+    <mat-card-content> -->
+        <!-- <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquid facere vero, tempore et veritatis <br> 
+            numquam. Perferendis magnam magni placeat rerum, quis, laboriosam ipsum pariatur a similique<br> 
+            exercitationem iure possimus enim.
+        </p> -->
+    <!-- </mat-card-content>
+</mat-card>
 
-    <form class="contactusForm">
-        <div class="heading1">
-            <h1>Write To Us</h1>
-        </div>
-        <div class="formfield">
-        <mat-form-field>
-            <input matInput type="text" placeholder="Your Name">
-        </mat-form-field>
-    </div>
-    <div class="formfield">    
-    <mat-form-field>
-            <input matInput type="text" placeholder="Your Email">
-        </mat-form-field>
-    </div> 
-    <div class="formfield">
-        <mat-form-field>
-            <input matInput type="text" placeholder="Your Subject">
-        </mat-form-field>
-    </div>
-    <div class="formfield">
-        <mat-form-field>
-            <textarea matInput type="text" placeholder="Your Message"></textarea>
-        </mat-form-field>
-    </div>
-    </form>
- -->
+</mat-grid-list> -->
 
+
+<!-- <mat-grid-list cols="2" rowHeight="550px">
+    <mat-grid-tile>
+        <mat-card class="dynamiccard">
+            <mat-card-header>
+                <mat-card-title>Write Us</mat-card-title>
+            </mat-card-header>
+
+            <form class="contactusForm">
+                <div class="heading1">
+                    <!-- <h1 style="text-align: Center;">Write To Us</h1> -->
+                <!-- </div>
+                <div class="formfield">
+                <mat-form-field>
+                    <input matInput type="text" placeholder="Your Name">
+                </mat-form-field>
+            </div>
+            <div class="formfield">    
+            <mat-form-field>
+                    <input matInput type="text" placeholder="Your Email">
+                </mat-form-field>
+            </div> 
+            <div class="formfield"> -->
+                <!-- <mat-form-field>
+                    <input matInput type="text" placeholder="Your Subject">
+                </mat-form-field>
+            </div>
+            <div class="formfield">
+                <mat-form-field>
+                    <textarea matInput type="text" placeholder="Your Message"></textarea>
+                </mat-form-field>
+            </div>
+            </form>
+            <div>
+                <button mat-raised-button color="accent" class="btnsubmit">Submit</button>
+            </div>
+            
+        </mat-card>
+    </mat-grid-tile>  -->
+
+
+    <!-- <mat-grid-tile>
+        <mat-card class="staticcard">
+            <mat-card-header>
+                <mat-card-title>Contact Us</mat-card-title>
+            </mat-card-header>
+            <form>
+                <div>
+                    <mat-icon>email</mat-icon>
+                    <mat-label>Email: info@quizapp.com</mat-label>
+                </div>
+                <div>
+                    <mat-icon>phone</mat-icon>
+                    <mat-label>Phone: 042-987654321</mat-label>
+                </div>
+                <div>
+                    <mat-icon>location_on</mat-icon>
+                    <mat-label>Address: Opposite Expo Center Johar Town Lahore</mat-label>
+                </div>  
+            </form>
+        </mat-card>
+    </mat-grid-tile>
+</mat-grid-list> -->
+
+
+
+
+
+
+
+
+
+
+
+<button (click)="showToasterSuccess()">
+    Success Toaster
+</button>
+   
+<button (click)="showToasterError()">
+    Error Toaster
+</button>
+   
+<button (click)="showToasterInfo()">
+    Info Toaster
+</button>
+   
+<button (click)="showToasterWarning()">
+    Warning Toaster
+</button>
 
 

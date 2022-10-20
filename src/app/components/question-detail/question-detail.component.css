@@ -1,0 +1,22 @@
+table {
+  width: 100%;
+}
+.mat-card{
+  margin-left: 2rem;
+  margin-top: 1rem;
+  padding-right: 5px;
+  width: 90%;
+  height: 90%;
+}
+
+
+.mat-icon{
+  height: 25px !important;
+  width: 25px !important;
+  font-size: 25px !important;
+}
+.mat-header-row{
+
+column-gap: 300px;
+
+}

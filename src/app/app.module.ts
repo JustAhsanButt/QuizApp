@@ -25,6 +25,12 @@ import { QuestionComponent } from './components/question/question.component';
 import { HomeComponent } from './components/home/home.component';
 import { QuestionanswerComponent } from './components/questionanswer/questionanswer.component';
 import { ChangeBackgroundDirective } from './change-background.directive';
+import { QuestionDetailComponent } from './components/question-detail/question-detail.component';
+import { ConfirmdialogComponent } from './components/confirmdialog/confirmdialog.component';
+import { UserComponent } from './components/user/user.component';
+
+import { ToastrModule } from 'ngx-toastr';
+
 
 
 
@@ -45,6 +51,9 @@ import { ChangeBackgroundDirective } from './change-background.directive';
     HomeComponent,
     QuestionanswerComponent,
     ChangeBackgroundDirective,
+    QuestionDetailComponent,
+    ConfirmdialogComponent,
+    UserComponent,
     
     
   ],
@@ -57,11 +66,12 @@ import { ChangeBackgroundDirective } from './change-background.directive';
     FormsModule,
     ReactiveFormsModule,
     NgChartsModule,
-    HttpClientModule
-    
+    HttpClientModule,
+    ToastrModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent],
+  entryComponents:[ConfirmdialogComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }

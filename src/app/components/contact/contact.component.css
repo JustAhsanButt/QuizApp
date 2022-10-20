@@ -1,4 +1,52 @@
-.pageheading1{
+mat-card{
+
+    padding-top: 3rem;
+    width: 90%;
+    margin-left: 3rem;
+}
+h1{
     text-align: center;
     padding: 1rem;
+    font-weight: 500;
+}
+
+.dynamiccard{
+    
+    width: 400px;
+    height:550px;
+}
+.staticcard{
+    background-color: rgb(51, 64, 161);
+    width: 400px;
+    height:550px;
+    color: white;
+   
+}
+.mat-icon{
+    margin-right: 10px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+mat-label{
+    text-align: center;
+    margin-left: 1rem;
+    padding: 1rem;
+    font-weight: 400;
+    font-style: oblique;
+    
+    
+}
+mat-form-field{
+    width: 100%;
+}
+textarea{
+    width: 100%;
+    height: 80px;
+}
+.btnsumit{
+    text-align: center;
+    width: 100%;
+    margin-left: 3rem;
+    margin-right: 5rem;
 }
